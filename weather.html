@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🌤️ Weather App</h1>
+
+    <input type="text" id="cityInput" placeholder="Enter city name" />
+    <button onclick="getWeather()">Get Weather</button>
+
+    <div class="weather-card">
+      <h2 id="city">City Name</h2>
+      <p id="temperature">-- °C</p>
+      <p id="condition">--</p>
+
+      <!-- ✅ Add this inside the weather card -->
+      <div class="date-time">
+        <p id="date">Date:   --</p>
+        <p id="time">Time:   --</p>
+      </div>
+    </div>
+
+    <button onclick="toggleDarkMode()" class="dark-mode-toggle">🌗 Toggle Dark Mode</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
